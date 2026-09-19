@@ -1,0 +1,98 @@
+body{
+    background-color: #ffffff;
+}
+.main-container{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    width: 50%;
+    margin:0 auto;
+    margin-top: 15vh ;
+    height: auto;
+    justify-content:center;
+    align-items: center;
+    
+}
+fieldset {
+    border-color: transparent;
+    border-radius: 10px;
+    color:rgb(3, 3, 3);
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px
+}
+
+.form-input input, .form-input textarea, .form-input select{
+    display:list-item;
+    margin-bottom:10px;
+}
+
+input[type="radio"] {
+    display: inline;
+}
+input[type="checkbox"] {
+    display: inline;
+}
+input[type="text"],input[type="password"] {
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+    border: 1px solid #b7b7b8;
+    border-radius: 10px;
+    outline: none;
+}
+input::placeholder{
+    color: black/60;
+    font-family: 'Poppins', sans-serif;
+}
+textarea::placeholder{
+    color: black/60;
+    font-family: 'Poppins', sans-serif;
+}
+textarea{
+    resize:none;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+}
+.form-input label{
+font-size:0.8em; font-weight:lighter;
+}
+input[type="text"]:focus, input[type="password"]:focus,textarea:focus{
+    border-color: #ff0000;
+    outline: none;
+}
+input[type="radio"] {
+    accent-color: black;
+}
+select{
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+}
+.btn-daftar{
+    background-color:black;
+    border-radius: 20px;
+    font-size:1em;
+    color:white;
+    border:2px transparent;
+    width: 100%;
+    padding-block-start: 5px;
+    padding-block-end: 5px;
+    margin-top:10px;
+}
+.btn-daftar:hover{
+    background-color: #252525;
+    color:white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.logo{
+    justify-self: center;
+    object-fit: cover;
+    object-position: bottom;
+}

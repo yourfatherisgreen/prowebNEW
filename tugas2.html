@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2/ Form</title>
+</head>
+<link rel="stylesheet" href="./form.css">
+
+<body>
+    <section class="main-container">
+        <form id="regis" onsubmit="success(event)">
+            <div class="form-container">
+                <fieldset>
+                    <div class="logo">
+                        <img src="./images/logo-D-jPADEi.webp" alt="logo inhale" width="120px" height="100px">
+                    </div>
+                    <div class="form-input">
+                        <div>
+                            <label for="Username">Nama Pengguna</label>
+                            <input type="text" placeholder="Username" name="Username" required>
+                        </div>
+                        <div>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" placeholder="Password" required>
+                        </div>
+                        <div>
+                            <label for="name">Alamat Lengkap</label>
+                            <textarea name="alamat" required placeholder="Alamat"></textarea>
+                        </div>
+                        <div>
+                            <label for="opsi">Jenis Kelamin</label>
+
+                            <div>
+                                <input type="radio" name="opsi">
+                                <label for="opsi">Laki-laki</label>
+
+                            </div>
+                            <div>
+                                <input type="radio" name="opsi">
+                                <label for="opsi">Perempuan</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="opsi">
+                                <label for="opsi">Tidak ingin Menyebutkan</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="source">Darimana anda mengetahui tentang Inhale Store</label>
+                            <select name="source">
+                                <optgroup label="Sosial Media">
+                                    <option value="instagram">Instagram</option>
+                                    <option value="tiktok">Tiktok</option>
+                                    <option value="facebook">Facebook</option>
+                                    <option value="youtube">Youtube</option>
+                                </optgroup>
+                                <optgroup label="Sumber lain">
+                                    <option value="brosur">Brosur</option>
+                                    <option value="teman">Teman</option>
+                                    <option value="lainlain">Lain lain</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="syarat">
+                            <label for="syarat">Saya telah membaca dan menyetujui Syarat & Ketentuan</label>
+                        </div>
+                        <div>
+                            <button type="submit" class="btn-daftar"  id="button">Daftar</button>
+                        </div>
+                    </div>
+                </fieldset>
+                <p>Kunjungi website kami di <a href="https://inhalestore.vercel.app" target="_blank" style="text-decoration:underline;color:black">https://inhalestore.vercel.app</a></p>
+        </form>
+    </section>
+
+    </div>
+<script>
+    function success (event){
+        event.preventDefault();
+        const form = document.getElementById("regis")
+        const button = document.getElementById("button")
+       
+        
+        setTimeout(function (){
+            form.reset();
+            button.innerText = "Akun berhasil di daftarkan ✅"
+        } ,2000);
+    }
+</script>
+</body>
+
+</html>
