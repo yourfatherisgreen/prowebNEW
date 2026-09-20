@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+</head>
+<link rel="stylesheet" href="./form.css">
+<body>
+    <div style="display: flex; justify-content:center;margin-top: 25vh;flex-direction: column; align-items: center;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="main">
+        <div>
+            <h1 style="text-align: center;">Kalkulator sederhana</h1>
+        </div>
+         
+        <form class="kalkulator" style="border: 1px solid black; padding-inline: 50px; padding-top: 30px; padding-bottom: 30px; border-radius: 20px;">
+           
+            <div>
+                <label for="bil1" >Input bilangan 1</label>
+                <input type="number" name="bil1" id="bil1" style="border:1px solid black;border-radius: 20px;">
+            </div>
+            <div>
+                <label for="bil2">Input bilangan 2</label>
+                <input type="number" name="bil2" id="bil2"style="border:1px solid black;border-radius: 20px;">
+            </div>
+            <div style="display: flex; justify-content: center;align-items:center ;gap: 20px; " class="buttons  ">
+                <button onclick="tambahAngka(event)" name="btnTambah" id="tambah" value="+">+</button>
+                <button onclick="kurangAngka(event)" name="btnKurang">-</button>
+                <button onclick="bagiAngka(event)" name="btnBagi">/</button>
+                <button onclick="kaliAngka(event)" name="btnKali">*</button>
+            </div>
+            <div>
+                <label for="bil3" style="margin-right: 60px ;">Output</label>
+                <input type="text" name="output" disabled id="output">
+            </div>
+        </form>
+    </div>
+    <script>
+        function tambahAngka(event){
+            event.preventDefault();
+            const bil1 = Number(document.getElementById("bil1").value);
+            const bil2 = Number(document.getElementById("bil2").value);
+            let result = bil1 + bil2;
+            const output = document.getElementById("output");
+            output.value = result;
+        }
+        function kurangAngka(event){
+            event.preventDefault();
+            const bil1 = Number(document.getElementById("bil1").value);
+            const bil2 = Number(document.getElementById("bil2").value);
+            let result = bil1 - bil2;
+            const output = document.getElementById("output");
+            output.value = result;
+        }
+        function bagiAngka(event){
+            event.preventDefault();
+            const bil1 = Number(document.getElementById("bil1").value);
+            const bil2 = Number(document.getElementById("bil2").value);
+            let result = bil1 / bil2;
+            const output = document.getElementById("output");
+            output.value = result;
+        }
+        function kaliAngka(event){
+            event.preventDefault();
+            const bil1 = Number(document.getElementById("bil1").value);
+            const bil2 = Number(document.getElementById("bil2").value);
+            let result = bil1 * bil2;
+            const output = document.getElementById("output");
+            output.value = result;
+        }   
+    </script>
+</body>
+
+</html>

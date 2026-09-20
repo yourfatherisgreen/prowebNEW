@@ -25,6 +25,7 @@ fieldset {
     margin-bottom:10px;
 }
 
+
 input[type="radio"] {
     display: inline;
 }
@@ -96,4 +97,16 @@ select{
     justify-content:center;
     align-items:center ; 
     object-fit: cover;
+}
+.main div{
+    padding-bottom: 10px;
+}
+.kalkulator{
+    width: fit-content;
+}
+.buttons button{
+    width:30px;
+    height: 30px;
+    font-weight: bold;
+    background-color: beige;
 }
