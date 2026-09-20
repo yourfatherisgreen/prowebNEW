@@ -4,7 +4,7 @@ body{
 .main-container{
     font-family: 'Poppins', sans-serif;
     display: flex;
-    width: 50%;
+    width: auto;
     margin:0 auto;
     margin-top: 15vh ;
     height: auto;
@@ -83,7 +83,6 @@ select{
     width: 100%;
     padding-block-start: 5px;
     padding-block-end: 5px;
-    margin-top:10px;
 }
 .btn-daftar:hover{
     background-color: #252525;
@@ -92,7 +91,9 @@ select{
     cursor: pointer;
 }
 .logo{
-    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center ; 
     object-fit: cover;
-    object-position: bottom;
 }
