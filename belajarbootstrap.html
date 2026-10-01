@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+  <title>Bootstrap</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+</style>
+
+<body style="font-family: 'Raleway', sans-serif;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="font-size: 1em;">
+      <a class="navbar-brand" href="#" >Proweb by Azmi</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Tutorial</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Profil
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="https://www.instagram.com/azmi_nst_?igsh=a3V2N3RyaWtqNTNy"  target="_blank">Instagram</a></li>
+              <li><a class="dropdown-item" href="https://www.linkedin.com/in/muhammad-azmi-rahman-nasution-115628372" target="_blank">LinkedIn</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="https://www.muhammadazmi.my.id/#herosec" target="_blank">Portfolio</a></li>
+            </ul>
+          </li>
+          <ul class="navbar-nav mb-2 mb-lg-0 gap-2">
+            <li class="nav-item">
+              <a type="button" class="btn btn-outline-success w-100" style="border-color: lightseagreen;" href="./tugas2.html">Daftar</a>
+            </li>
+            <li class="nav-item">
+              <a type="button" class="btn btn-primary w-100" href="./tugas2.html">Masuk</a>
+            </li>
+          </ul>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col align-self-center">
+          <h1 style="font-family: 'Archivo Black', sans-serif;">Hai! <br>Selamat datang di matkul ProWeb</h1>
+          <p class="mt-3 mb-4">Belajar buat web dari html css js mysql dan php</p>
+          <button type="button" class="btn btn-success">Mulai Sekarang</button>
+        </div>
+        <div class="col d-none d-lg-block d-xl-block">
+          <img src="./images/hero-3-img.png" alt="fotoanu" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="container-fluid pb-5" style="background: linear-gradient(to bottom, #ffffff, #b8b8bb);">
+    <div class="row " class="cards">
+      <div class="col text-center">
+        <h2 style="font-family: 'Archivo Black', sans-serif;" class="mt-5">Artikel Tentang Pemrograman Web</h2>
+        <caption>Berikut beberapa artikel yang bisa kamu baca untuk menambah wawasan tentang pemrograman web</caption>
+      </div>
+      <div class="row mt-5 gap-5 justify-content-center">
+        <div class="card text-center" style="width: 18rem;"  style="background-color: #000555;" >
+          <img src="./images/googleold.png" class="card-img-top"  alt="cover artikel 1" style="border: 1px solid black;border-radius: 5px;margin-top: 10px;height: 250px;object-fit: cover;">
+          <div class="card-body d-flex flex-column" >
+            <h5 class="card-title " style="font-weight:bolder;" >Sejarah Pemrograman Web</h5>
+            <p class="card-text">Artikel ini membahas perkembangan pemrograman web dari masa ke masa.</p>
+            <a href="https://rangle.io/blog/a-brief-history-of-web-programming" class="btn btn-primary mt-auto" target="_blank">Baca Selengkapnya</a>
+          </div>
+        </div>
+      <div class="card text-center" style="width: 18rem;"  style="background-color: #000555;" >
+          <img src="./images/html.png" class="card-img-top"  alt="cover artikel 1" style="border: 1px solid black;border-radius: 5px;margin-top: 10px;height: 250px;object-fit: cover;">
+          <div class="card-body d-flex flex-column  " >
+            <h5 class="card-title " style="font-weight:bolder;" >Tutorial HTML dasar</h5>
+            <p class="card-text">Di website ini, kamu dapat menemukan berbagai tutorial segala bahasa pemrohgraman dan salah satunya adalah HTML, yang menjadi awal perjalanan dalam belajar pemrograman web.</p>
+            <a href="https://www.w3schools.com/html/"  class="btn btn-primary mt-auto" target="_blank">Baca Selengkapnya</a>
+          </div>
+        </div>
+        <div class="card text-center" style="width: 18rem;"  style="background-color: #000555;" >
+          <img src="./images/mern.png" class="card-img-top"  alt="cover artikel 1" style="border: 1px solid black;border-radius: 5px;margin-top: 10px;height: 250px;object-fit: cover;">
+          <div class="card-body d-flex flex-column" >
+            <h5 class="card-title " style="font-weight:bolder;" >Framework modern dalam pengembangan website di tahun 2026</h5>
+            <p class="card-text">Artikel ini membahas framework-framework modern yang sedang populer dalam pengembangan website di tahun 2026.</p>
+            <a href="https://rangle.io/blog/a-brief-history-of-web-programming" class="btn btn-primary mt-auto" target="_blank  ">Baca Selengkapnya</a>
+          </div>
+        </div>
+      <div class="card text-center" style="width: 18rem;"  style="background-color: #000555;" >
+          <img src="./images/bored.png" class="card-img-top"  alt="cover artikel 1" style="border: 1px solid black;border-radius: 5px;margin-top: 10px;height: 250px;object-fit: cover;">
+          <div class="card-body d-flex flex-column" >
+            <h5 class="card-title " style="font-weight:bolder;" >Daftar web untuk dikunjungi saat anda bosan</h5>
+            <p class="card-text">Berikut adalah beberapa website menarik untuk sekedar mengisi waktu luang</p>
+            <a href="https://www.geeksforgeeks.org/blogs/top-frameworks-for-web-applications/" class="btn btn-primary mt-auto" target="_blank">Baca Selengkapnya</a>
+          </div>
+        </div>
+      <div class="card text-center" style="width: 18rem;"  style="background-color: #000555;" >
+          <img src="./images/download.jpg" class="card-img-top"  alt="cover artikel 1" style="border: 1px solid black;border-radius: 5px;margin-top: 10px;height: 250px;object-fit: cover;">
+          <div class="card-body d-flex flex-column" >
+            <h5 class="card-title " style="font-weight:bolder;" >Apakah website yang kamu buat sudah aman?</h5>
+            <p class="card-text">Dengan website ini, kamu dapat menemukan celah keamanan pada website yang kamu buat.</p>
+            <a href="https://rangle.io/blog/a-brief-history-of-web-programming" class="btn btn-primary mt-auto" target="_blank">Baca Selengkapnya</a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
